@@ -6,7 +6,9 @@ RUN apt-get update \
                rsync
 
 RUN gem install nanoc \
+                kramdown \
                 nokogiri \
+                sass \
                 w3c_validators
 
 RUN useradd nanoc
